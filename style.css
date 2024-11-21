@@ -1,3 +1,67 @@
-.nav-bar{
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+.top-content {
     background-image: url(nav-background.jpg);
+    position: fixed;
+    width: 100%;
+
+}
+
+.nav-bar {
+    padding: 8px 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+    font-family: "Edu AU VIC WA NT Pre", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+}
+
+.heading>h1 {
+    color: white;
+    display: inline;
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+
+}
+
+.nav-bar-links {
+
+    display: flex;
+
+
+}
+
+.nav-bar-link {
+    margin: 10px 15px;
+    display: flex;
+}
+
+.nav-bar-link>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+.sign-up-button>button {
+    background: transparent;
+    padding: 10px 25px;
+    color: white;
+    border: solid 1px;
+    border-color: rgb(255, 255, 255);
+    border-radius: 25px;
+
+}
+
+.content>.text-content {
+    color: white;
+    font-family: "Poppins", serif;
+    font-weight: 100;
+    font-style: normal;
 }
