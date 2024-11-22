@@ -107,6 +107,7 @@
 }
 
 .container>div {
+    margin-top: 20px;
     padding: 20px;
 }
 
@@ -147,7 +148,17 @@ span {
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:800px) {
+
+    .nav-bar-links{
+        display: none;
+    }
+    .container{
+        display: inline-block;
+    }
+    .container>div{
+        display: block
+    };
 
    
 }
