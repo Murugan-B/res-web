@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-
+    color: white;
 }
 
 .top-content {
@@ -23,7 +23,6 @@
 }
 
 .heading>h1 {
-    color: white;
     display: inline;
     font-family: "Poppins", serif;
     font-weight: 200;
@@ -45,23 +44,110 @@
 
 .nav-bar-link>a {
     text-decoration: none;
-    color: white;
+
 }
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
+
 
 
 .sign-up-button>button {
     background: transparent;
     padding: 10px 25px;
-    color: white;
     border: solid 1px;
     border-color: rgb(255, 255, 255);
     border-radius: 25px;
 
 }
 
-.content>.text-content {
-    color: white;
-    font-family: "Poppins", serif;
+.content {
+    margin-top: 12%;
+    margin-left: 10%;
+}
+
+.text-content h2 {
+    font-family: "Bokor", serif;
     font-weight: 100;
+    font-size: 60px;
     font-style: normal;
+}
+
+.icon>i {
+    padding-right: 10px;
+}
+
+.text-content p {
+    font-family: "Bokor", serif;
+    font-weight: 100;
+    font-size: 25px;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgb(34, 34, 54);
+    margin: 5%;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.container>div {
+    flex-basis: 15%;
+    background-color: rgb(60, 60, 94);
+    border-radius: 30px;
+    text-align: center;
+}
+
+.content>.icon {
+    margin: 20px;
+}
+
+.container>div {
+    padding: 20px;
+}
+
+.adults>p,
+.children>p {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.date,
+.month-year {
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+span {
+    padding: 5px 10px;
+    border: solid 2px;
+    border-radius: 100%;
+}
+
+.arrival,
+.departure {
+    display: flex;
+}
+
+.date {
+    font-size: 30px;
+}
+
+.check-button>button {
+    border: none;
+    padding: 10px 15px;
+    background-color: rgb(7, 238, 96);
+    border-radius: 28px;
+}
+
+
+
+@media screen and (max-width:600px) {
+
+   
 }
