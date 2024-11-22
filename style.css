@@ -1,14 +1,19 @@
+
 * {
     padding: 0;
     margin: 0;
     color: white;
+    box-sizing: border-box; 
 }
+
 
 .top-content {
     background-image: url(nav-background.jpg);
-    position: fixed;
     width: 100%;
-
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    position: relative;
 }
 
 .nav-bar {
@@ -17,8 +22,7 @@
     justify-content: space-around;
     margin-bottom: 40px;
     font-family: "Edu AU VIC WA NT Pre", cursive;
-    font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: normal; 
     font-style: normal;
 }
 
@@ -27,14 +31,11 @@
     font-family: "Poppins", serif;
     font-weight: 200;
     font-style: normal;
-
 }
 
+
 .nav-bar-links {
-
     display: flex;
-
-
 }
 
 .nav-bar-link {
@@ -44,27 +45,27 @@
 
 .nav-bar-link>a {
     text-decoration: none;
-
+    color: white; 
+    font-size: 18px;
 }
-
-
-
-@import url('https://fonts.googleapis.com/css2?family=Bokor&display=swap');
-
 
 
 .sign-up-button>button {
     background: transparent;
     padding: 10px 25px;
-    border: solid 1px;
-    border-color: rgb(255, 255, 255);
+    border: solid 1px #fff;
     border-radius: 25px;
-
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
+
+
 
 .content {
     margin-top: 12%;
     margin-left: 10%;
+    overflow-y: auto;
 }
 
 .text-content h2 {
@@ -100,22 +101,18 @@
     background-color: rgb(60, 60, 94);
     border-radius: 30px;
     text-align: center;
+    margin-top: 20px;
+    padding: 20px;
 }
 
 .content>.icon {
     margin: 20px;
 }
 
-.container>div {
-    margin-top: 20px;
-    padding: 20px;
-}
-
 .adults>p,
 .children>p {
     margin-top: 10px;
     font-size: 20px;
-
 }
 
 .date,
@@ -133,32 +130,54 @@ span {
 .arrival,
 .departure {
     display: flex;
+    align-items: center; 
 }
 
 .date {
     font-size: 30px;
+    font-weight: bold;
 }
+
 
 .check-button>button {
     border: none;
     padding: 10px 15px;
     background-color: rgb(7, 238, 96);
     border-radius: 28px;
+    cursor: pointer;
 }
 
 
-
-@media screen and (max-width:800px) {
-
-    .nav-bar-links{
-        display: none;
+@media screen and (max-width: 800px) {
+       body, html {
+        overflow-y: auto;
+        height: auto;
     }
-    .container{
+
+        .nav-bar-links {
+        display: none; 
+       }
+
+        .container {
         display: inline-block;
     }
-    .container>div{
-        display: block
-    };
 
-   
+    .container>div {
+        display: block;
+        width: 100%; 
+        margin-top: 10px;
+    }
+
+    
+    .text-content h2 {
+        font-size: 40px; 
+    }
+
+    .text-content p {
+        font-size: 18px;
+    }
+
+    .sign-up-button>button {
+        font-size: 14px;
+    }
 }
